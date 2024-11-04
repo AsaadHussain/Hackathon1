@@ -3,6 +3,8 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 .mainDiv {
@@ -10,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
 }
 
 .innerDiv {
@@ -18,7 +20,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     background-color: rgb(216, 212, 155);
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -26,7 +28,13 @@ body {
     margin: 10px;
 }
 
-.nameDiv {
+.nameD {
+    background-color: rgb(216, 212, 155);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.topDiv {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,13 +46,15 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
     color: cadetblue;
+    padding: 0px 50px 0px 50px;
 }
 
 .image1 {
     height: 200px;
     width: 160px;
     object-fit: cover;
-    border: 10px solid gainsboro;
+    border: 10px solid cadetblue;
+    margin: 0px 10px 0px 50px;
 }
 
 .imgDiv:hover {
@@ -221,7 +231,7 @@ body {
     .image1 {
         height: 150px;
         width: 120px;
-        border: 6px solid gainsboro;
+        border: 6px solid cadetblue;
 
     }
 
@@ -246,14 +256,20 @@ body {
 
 @media only screen and (max-width:700px) and (min-width:500px) {
 
+    .nameD {
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+    }
+
     .name {
         font-size: 44px;
+        padding: 0px 25px 0px 20px;
     }
 
     .image1 {
         height: 120px;
         width: 100px;
-        border: 5px solid gainsboro;
+        border: 5px solid cadetblue;
 
     }
 
@@ -298,14 +314,20 @@ body {
 
 @media only screen and (max-width:500px) and (min-width:200px) {
 
+    .nameD {
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
     .name {
         font-size: 30px;
+        padding: 0px 20px 0px 10px;
     }
 
     .image1 {
         height: 80px;
         width: 60px;
-        border: 4px solid gainsboro;
+        border: 4px solid cadetblue;
 
     }
 
