@@ -12,7 +12,7 @@ var toggleSkillsDisplay = function () {
     else {
         skillsSection.style.display = 'none';
         button.innerHTML = 'Show Skills';
-        button.innerHTML = 'Hide Skills';
+        button.blur();
     }
 };
 button.addEventListener('click', toggleSkillsDisplay);
