@@ -8,7 +8,7 @@ button.innerHTML = 'Show Skills';
 
 const toggleSkillsDisplay = () => {
     if (skillsSection.style.display === 'none') {
-        skillsSection.style.display = 'block';
+        skillsSection.style.display = 'flex';
         button.innerHTML = 'Hide Skills';
         button.blur();
     } else {

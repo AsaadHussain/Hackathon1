@@ -5,7 +5,7 @@ skillsSection.style.transition = '1s ease-in-out';
 button.innerHTML = 'Show Skills';
 var toggleSkillsDisplay = function () {
     if (skillsSection.style.display === 'none') {
-        skillsSection.style.display = 'block';
+        skillsSection.style.display = 'flex';
         button.innerHTML = 'Hide Skills';
         button.blur();
     }
